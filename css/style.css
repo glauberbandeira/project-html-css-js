@@ -83,8 +83,8 @@ header nav .btn-primary {
 
 .s-hero .image {
     width: 100%;
-    max-width: 48.8rem;
-    height: 49.6rem;
+    max-width: 30.8rem;
+    height: 33.6rem;
     background-color: var(--gray-colors-800);
     display: flex;
     align-items: center;
@@ -161,5 +161,34 @@ header nav .btn-primary {
     text-align: center;
 }
 .s-card-featured .all-cards .card .info p {
-    margin-top: 8px;
+    margin-top: .8rem;
 }
+
+/* Second Area */
+.s-card-featured .second-area {
+    margin-top: 11.2rem;
+}
+
+.s-card-featured .second-area .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6.4rem;
+}
+
+.s-card-featured .second-area .all-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 4rem;
+    justify-content: center;
+}
+.s-card-featured .second-area .all-imgs .image {
+    width: 23.5%;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C1D1F;
+}
+
