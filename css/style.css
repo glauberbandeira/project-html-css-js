@@ -1,8 +1,11 @@
 header {
+    position: fixed;
+    top: 0;
     width: 100%;
-    background-color: var(--gray-colors-100);
+    background-color: var(--white);
     height: 8.8rem;
     display: flex;
+    z-index: 999;
 }
 
 header .container {
@@ -11,14 +14,18 @@ header .container {
     align-items: center;
 }
 
-header .container .logo {
+.container .logo {
     font-weight: bold;
     font-size: 3.0rem;
-    color: var(--white);
+    color: var(--gray-colors-100);
 }
-header .container .logo>span {
+.container .logo>span {
     color: var(--brand-colors-blue);
     font-size: 3.0rem;
+}
+
+.container .logo.white {
+    color: var(--white);
 }
 
 
@@ -50,6 +57,7 @@ header nav .btn-primary {
 
 /* ============ Section Hero ================ */
 .s-hero {
+    margin-top: 8.8rem;
     padding: 7.2rem 0px;
 }
 
@@ -78,7 +86,7 @@ header nav .btn-primary {
 }
 
 .s-hero .text .btn-primary {
-    padding: 1.7rem 15.7rem;
+    padding: 1.7rem 1.7rem;
 }
 
 .s-hero .image {
@@ -220,3 +228,88 @@ header nav .btn-primary {
 .s-newsletter .btn-primary {
     padding: 1.75rem 4.1rem;
 }
+
+
+/* Footer */
+footer {
+    background-color: var(--gray-colors-100);
+    padding-top: 8.8rem;
+    padding-bottom: 3.9rem;
+}
+
+footer main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 7.2rem;
+}
+
+footer main .area-left {
+    max-width: 28.1rem;
+}
+
+footer main .area-left p {
+    font-size: 1.4rem;
+    line-height: 150%;
+    color: var(--white-colors-text);
+    margin-top: 3.5rem;
+}
+
+footer main nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 77.7rem;
+}
+
+footer main nav .item h6 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: -1px;
+    color: var(--white);
+    margin-bottom: 2.4rem;
+}
+
+footer main nav .item ul li a {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.4rem;
+    line-height: 105%;
+    color: var(--white-colors-text);
+    transition: 0.3;
+}
+
+footer main nav .item ul li a:hover {
+    color: var(--white);
+}
+
+footer main nav .item ul li {
+    margin-bottom: 3.2rem;
+}
+footer main nav .item ul li:last-child {
+    margin-bottom: 0rem;
+}
+
+footer main nav .item:last-child ul li a {
+    display: flex;
+    align-items: center;
+}
+
+footer main nav .item:last-child ul li a span {
+    margin-left: .8rem;
+}
+
+footer .copy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3.1rem;
+}
+
+footer .copy p {
+    color: var(--white);
+}
+
+
